@@ -94,7 +94,7 @@ bindsym $mod+a focus parent
 
 set $workspace1 "1 "
 set $workspace2 "2 "
-set $workspace3 "3  | "
+set $workspace3 "3  |  | "
 
 
 
@@ -123,11 +123,16 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 
+#workspace $workspace3 output eDP-1
+#workspace $workspace1 output HDMI-1
+#workspace $workspace2 output HDMI-1
 
-assign [class="wavebox"] $workspace2
-assign [class="Google-chrome"] $workspace1
+
+assign [class="Wavebox"] $workspace2
+assign [class="Brave-browser"] $workspace1
 assign [class="TelegramDesktop"] $workspace3
 assign [class="Slack"] $workspace3
+assign [class="Chirp"] $workspace3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -214,7 +219,10 @@ exec_always feh --bg-center Pictures/wallpaper.jpg
 
 exec_always xrandr --output HDMI-1 --primary --mode 2560x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
 
-exec  /opt/wavebox/Wavebox --hidden
+exec  /opt/wavebox.io/wavebox/wavebox --hidden
 
 exec /opt/telegram/Telegram 
+exec Chirp-linux-x64/Chirp
 exec slack
+
+

@@ -2,20 +2,31 @@ Host falcon
     HostName 192.168.23.36
     User hitkul
     LocalForward 6565 localhost:6565
+    LocalForward 6464 localhost:6464
 
 Host skywalker
     HostName 192.168.30.235
     User hitkul  
     LocalForward 6565 localhost:6565
+    LocalForward 6464 localhost:6464
 
 Host raxus-prime
     HostName 192.168.23.118
     User hitkul  
     LocalForward 32400 localhost:32400
-
+   
 Host olaf
     HostName 192.168.1.246
     User hitkulj  
     LocalForward 6565 localhost:6565
+    LocalForward 6464 localhost:6464
 
+Host deathstar
+    HostName 192.168.3.6
+    User hitkul
+    LocalForward 6565 localhost:6565
+    LocalForward 6464 localhost:6464
 
+Host nas_box
+	HostName 192.168.3.12
+	User hitkul
