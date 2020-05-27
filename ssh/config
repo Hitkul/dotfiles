@@ -15,6 +15,7 @@ Host raxus-prime
     User hitkul  
     LocalForward 32400 localhost:32400
    
+
 Host olaf
     HostName 192.168.1.246
     User hitkulj  
@@ -26,7 +27,9 @@ Host deathstar
     User hitkul
     LocalForward 6565 localhost:6565
     LocalForward 6464 localhost:6464
-
 Host nas_box
 	HostName 192.168.3.12
 	User hitkul
+Host annonate
+	HostName 68.183.84.39
+	User karmanya
